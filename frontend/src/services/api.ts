@@ -97,6 +97,9 @@ export const integrationsAPI = {
   disconnectGoogle: () => api.post('/integrations/google/disconnect'),
   
   syncAll: () => api.get('/integrations/sync'),
+
+  connectJira: (credentials: { domain: string; email: string; token: string }) =>
+    api.post('/integrations/jira/connect', credentials),
 };
 
 // Tasks API

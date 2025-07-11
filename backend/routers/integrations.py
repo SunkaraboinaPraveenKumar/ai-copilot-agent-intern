@@ -5,7 +5,7 @@ from typing import List, Dict, Any
 from datetime import datetime
 import logging
 
-from database import get_db, User, UserToken
+from database import get_db, User, UserToken, JiraCredential
 from services.google_service import GoogleService
 from services.jira_service import JiraService
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
@@ -33,6 +33,11 @@ class IntegrationStatus(BaseModel):
     connected: bool
     last_sync: str = None
     error: str = None
+
+class JiraConnectRequest(BaseModel):
+    domain: str
+    email: str
+    token: str
 
 @router.get("/status")
 async def get_integration_status(
@@ -65,8 +70,12 @@ async def get_integration_status(
     
     # Check JIRA integration
     try:
-        jira_service = JiraService()
-        jira_connected = jira_service.test_connection()
+        jira_cred = db.query(JiraCredential).filter(JiraCredential.user_id == user.id).first()
+        if jira_cred:
+            jira_service = JiraService(jira_cred.domain, jira_cred.email, jira_cred.api_token)
+            jira_connected = jira_service.test_connection()
+        else:
+            jira_connected = False
         jira_status = IntegrationStatus(
             service="jira",
             connected=jira_connected,
@@ -135,21 +144,25 @@ async def get_google_data(
 @router.get("/jira/data")
 async def get_jira_data(
     data_type: str = "issues",  # 'issues', 'projects'
-    current_user: dict = Depends(lambda: None)
+    current_user: dict = Depends(lambda: None),
+    db: Session = Depends(get_db)
 ):
     """Fetch data from JIRA"""
+    user = db.query(User).filter(User.id == int(current_user["sub"])).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    jira_cred = db.query(JiraCredential).filter(JiraCredential.user_id == user.id).first()
+    if not jira_cred:
+        raise HTTPException(status_code=400, detail="Jira not connected")
     try:
-        jira_service = JiraService()
-        
+        jira_service = JiraService(jira_cred.domain, jira_cred.email, jira_cred.api_token)
         if data_type == "issues":
             data = jira_service.get_user_issues()
         elif data_type == "projects":
             data = jira_service.get_projects()
         else:
             raise HTTPException(status_code=400, detail="Invalid data type")
-        
         return {"data_type": data_type, "data": data}
-        
     except Exception as e:
         raise HTTPException(
             status_code=500,
@@ -176,6 +189,30 @@ async def disconnect_google(
         db.commit()
     
     return {"message": "Google integration disconnected"}
+
+@router.post("/jira/connect")
+async def connect_jira(
+    req: JiraConnectRequest,
+    current_user: dict = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """Store Jira credentials for the current user"""
+    user = db.query(User).filter(User.id == int(current_user["sub"])).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    # Remove any existing credentials for this user
+    db.query(JiraCredential).filter(JiraCredential.user_id == user.id).delete()
+    # Store new credentials
+    cred = JiraCredential(
+        user_id=user.id,
+        domain=req.domain,
+        email=req.email,
+        api_token=req.token
+    )
+    db.add(cred)
+    db.commit()
+    return {"message": "Jira credentials saved"}
 
 @router.get("/sync")
 async def sync_all_integrations(
@@ -224,15 +261,19 @@ async def sync_all_integrations(
     
     # Sync JIRA data
     try:
-        jira_service = JiraService()
-        if jira_service.test_connection():
-            issues = jira_service.get_user_issues(max_results=10)
-            sync_results["jira"] = {
-                "status": "success",
-                "issues": len(issues)
-            }
+        jira_cred = db.query(JiraCredential).filter(JiraCredential.user_id == user.id).first()
+        if jira_cred:
+            jira_service = JiraService(jira_cred.domain, jira_cred.email, jira_cred.api_token)
+            if jira_service.test_connection():
+                issues = jira_service.get_user_issues(max_results=10)
+                sync_results["jira"] = {
+                    "status": "success",
+                    "issues": len(issues)
+                }
+            else:
+                sync_results["jira"] = {"status": "connection_failed"}
         else:
-            sync_results["jira"] = {"status": "connection_failed"}
+            sync_results["jira"] = {"status": "not_connected"}
     except Exception as e:
         sync_results["jira"] = {"status": "error", "error": str(e)}
     

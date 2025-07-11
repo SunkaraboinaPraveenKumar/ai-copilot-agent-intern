@@ -68,6 +68,18 @@ class Message(Base):
     # Relationships
     conversation = relationship("Conversation", back_populates="messages")
 
+class JiraCredential(Base):
+    __tablename__ = "jira_credentials"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    domain = Column(String)
+    email = Column(String)
+    api_token = Column(Text)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    user = relationship("User")
+
 def get_db():
     db = SessionLocal()
     try:

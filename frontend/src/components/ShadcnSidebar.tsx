@@ -64,16 +64,7 @@ function ShadcnSidebar({ isOpen, onClose }: SidebarProps) {
       connected: integrations.jira,
       status: integrations.jira ? 'Connected' : 'Disconnected',
       color: integrations.jira ? 'text-green-600' : 'text-red-600'
-    },
-    { 
-      id: 'confluence', 
-      name: 'Confluence', 
-      icon: FileText, 
-      description: 'Access your team documentation', 
-      connected: integrations.confluence,
-      status: integrations.confluence ? 'Connected' : 'Disconnected',
-      color: integrations.confluence ? 'text-green-600' : 'text-red-600'
-    },
+    }
   ];
 
   return (

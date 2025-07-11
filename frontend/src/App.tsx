@@ -7,7 +7,7 @@ import { ChatProvider } from './contexts/ChatContext';
 import { IntegrationsProvider } from './contexts/IntegrationsContext';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import ShadcnSidebar from './components/ShadcnSidebar';
-import { SidebarProvider, SidebarTrigger } from './components/ui/sidebar';
+import { SidebarProvider } from './components/ui/sidebar';
 
 function AuthCallback() {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ function AuthCallback() {
     const token = params.get('token');
     if (token) {
       localStorage.setItem('auth_token', token);
-      navigate('/'); // Redirect to ChatInterface
+      navigate('/');
     } else {
       navigate('/login');
     }

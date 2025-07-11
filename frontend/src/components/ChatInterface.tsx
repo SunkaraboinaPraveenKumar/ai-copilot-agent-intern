@@ -14,7 +14,6 @@ export function ChatInterface({ onSidebarToggle }: ChatInterfaceProps) {
   const [input, setInput] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { messages, isLoading, sendMessage } = useChat();
-  const { user } = useAuth();
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });

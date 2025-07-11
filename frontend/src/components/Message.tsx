@@ -1,5 +1,5 @@
-import React from 'react';
-import { Bot, User, Calendar, Mail, GitBranch, Clock, CheckCircle, AlertCircle } from 'lucide-react';
+import { Bot, User, Calendar, Mail, GitBranch, Clock, CheckCircle } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 interface MessageProps {
   message: {
@@ -38,9 +38,9 @@ export function Message({ message }: MessageProps) {
 
         {/* Message Content */}
         <div className={`${isAssistant ? 'bg-gray-50' : 'bg-gradient-to-r from-blue-500 to-purple-600'} rounded-2xl px-4 py-3`}>
-          <p className={`text-sm ${isAssistant ? 'text-gray-800' : 'text-white'}`}>
+          <ReactMarkdown>
             {message.content}
-          </p>
+          </ReactMarkdown>
           
           {/* Attachments */}
           {message.attachments && message.attachments.length > 0 && (

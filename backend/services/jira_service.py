@@ -9,14 +9,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class JiraService:
-    def __init__(self):
-        self.server = os.getenv("JIRA_SERVER")
-        self.email = os.getenv("JIRA_EMAIL")
-        self.api_token = os.getenv("JIRA_API_TOKEN")
-        
+    def __init__(self, server: str, email: str, api_token: str):
+        self.server = server
+        self.email = email
+        self.api_token = api_token
         if not all([self.server, self.email, self.api_token]):
             raise ValueError("JIRA configuration is incomplete")
-        
         self.auth = HTTPBasicAuth(self.email, self.api_token)
         self.base_url = f"{self.server}/rest/api/3"
 

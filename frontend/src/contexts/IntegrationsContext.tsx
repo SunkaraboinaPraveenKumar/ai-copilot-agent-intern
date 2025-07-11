@@ -12,7 +12,7 @@ interface Integrations {
 interface IntegrationsContextType {
   integrations: Integrations;
   integrationStatus: IntegrationStatus[];
-  connectIntegration: (id: string) => void;
+  connectIntegration: (id: string, credentials?: { domain: string; email: string; token: string }) => Promise<void>;
   disconnectIntegration: (id: string) => void;
   refreshStatus: () => Promise<void>;
   syncAll: () => Promise<void>;
@@ -77,7 +77,7 @@ export function IntegrationsProvider({ children }: { children: React.ReactNode }
     }
   };
 
-  const connectIntegration = async (id: string) => {
+  const connectIntegration = async (id: string, credentials?: { domain: string; email: string; token: string }) => {
     if (id === 'gmail' || id === 'calendar' || id === 'drive') {
       // Redirect to Google OAuth
       try {
@@ -87,6 +87,10 @@ export function IntegrationsProvider({ children }: { children: React.ReactNode }
         // If auth is needed, the API will handle the redirect
         console.log('Google auth required');
       }
+    } else if (id === 'jira' && credentials) {
+      // Send credentials to backend
+      await integrationsAPI.connectJira(credentials);
+      await refreshStatus();
     } else {
       // For other integrations, just update local state
       setIntegrations(prev => ({ ...prev, [id]: true }));
