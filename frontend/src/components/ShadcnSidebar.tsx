@@ -14,6 +14,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { useIntegrations } from "../contexts/IntegrationsContext";
 import { IntegrationCard } from "./IntegrationCard";
 import { TaskSummary } from "./TaskSummary";
+import { TaskList } from "./TaskList";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -152,7 +153,14 @@ function ShadcnSidebar({ isOpen, onClose }: SidebarProps) {
             </div>
           )}
           
-          {activeTab === 'tasks' && <TaskSummary />}
+          {activeTab === 'tasks' && (
+            <>
+              <TaskSummary />
+              <div className="mt-6">
+                <TaskList />
+              </div>
+            </>
+          )}
         </div>
         
         {/* Footer */}

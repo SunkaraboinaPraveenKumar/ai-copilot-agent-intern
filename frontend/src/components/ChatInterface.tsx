@@ -77,8 +77,8 @@ export function ChatInterface({ onSidebarToggle }: ChatInterfaceProps) {
       <div className="flex-1 overflow-y-auto px-4 py-6 bg-gray-50">
         {messages.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-center max-w-4xl mx-auto">
-            <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center mb-6 shadow-lg">
-              <Zap className="h-10 w-10 text-white" />
+            <div className="w-15 h-15 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6 shadow-lg p-1">
+              <Zap className="h-5 w-5 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Welcome to AI Copilot</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-md">

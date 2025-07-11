@@ -7,7 +7,7 @@ import logging
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from services.auth_service import verify_token
 
-from database import get_db, User, UserToken
+from database import get_db, User, UserToken, JiraCredential
 from services.google_service import GoogleService
 from services.jira_service import JiraService
 from services.llm_service import LLMService
@@ -255,23 +255,25 @@ async def _gather_all_tasks(user: User, db: Session) -> List[Dict[str, Any]]:
     
     # Get JIRA issues
     try:
-        jira_service = JiraService()
-        if jira_service.test_connection():
-            issues = jira_service.get_user_issues(max_results=50)
-            for issue in issues:
-                priority_map = {'Highest': 'high', 'High': 'high', 'Medium': 'medium', 'Low': 'low', 'Lowest': 'low'}
-                all_tasks.append({
-                    'id': issue['key'],
-                    'title': issue['summary'],
-                    'description': issue['description'],
-                    'status': issue['status'],
-                    'priority': priority_map.get(issue['priority'], 'medium'),
-                    'due_date': issue['due_date'],
-                    'source': 'jira',
-                    'type': 'issue',
-                    'project': issue['project'],
-                    'url': issue['url']
-                })
+        jira_cred = db.query(JiraCredential).filter(JiraCredential.user_id == user.id).first()
+        if jira_cred:
+            jira_service = JiraService(jira_cred.domain, jira_cred.email, jira_cred.api_token)
+            if jira_service.test_connection():
+                issues = jira_service.get_user_issues(max_results=50)
+                for issue in issues:
+                    priority_map = {'Highest': 'high', 'High': 'high', 'Medium': 'medium', 'Low': 'low', 'Lowest': 'low'}
+                    all_tasks.append({
+                        'id': issue['key'],
+                        'title': issue['summary'],
+                        'description': issue['description'],
+                        'status': issue['status'],
+                        'priority': priority_map.get(issue['priority'], 'medium'),
+                        'due_date': issue['due_date'],
+                        'source': 'jira',
+                        'type': 'issue',
+                        'project': issue['project'],
+                        'url': issue['url']
+                    })
     except Exception as e:
         print(f"Failed to fetch JIRA issues: {e}")
     
@@ -306,9 +308,11 @@ async def _gather_raw_data(user: User, db: Session):
     
     # Get JIRA issues
     try:
-        jira_service = JiraService()
-        if jira_service.test_connection():
-            issues = jira_service.get_user_issues(max_results=30)
+        jira_cred = db.query(JiraCredential).filter(JiraCredential.user_id == user.id).first()
+        if jira_cred:
+            jira_service = JiraService(jira_cred.domain, jira_cred.email, jira_cred.api_token)
+            if jira_service.test_connection():
+                issues = jira_service.get_user_issues(max_results=30)
     except Exception as e:
         print(f"Failed to fetch JIRA issues: {e}")
     

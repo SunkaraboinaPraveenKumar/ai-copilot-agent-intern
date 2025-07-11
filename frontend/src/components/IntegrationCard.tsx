@@ -45,7 +45,14 @@ export function IntegrationCard({ integration }: IntegrationCardProps) {
       setJiraEmail('');
       setJiraToken('');
     } catch (err: any) {
-      setError('Failed to connect Jira. Please check your credentials.');
+      // Try to extract backend error message
+      let message = 'Failed to connect Jira. Please check your credentials.';
+      if (err?.response?.data?.detail) {
+        message = err.response.data.detail;
+      } else if (err?.message) {
+        message = err.message;
+      }
+      setError(message);
     } finally {
       setIsSubmitting(false);
     }

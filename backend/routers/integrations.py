@@ -196,10 +196,18 @@ async def connect_jira(
     current_user: dict = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
-    """Store Jira credentials for the current user"""
+    """Store Jira credentials for the current user, but only if valid."""
     user = db.query(User).filter(User.id == int(current_user["sub"])).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
+
+    # Validate credentials before saving
+    try:
+        jira_service = JiraService(req.domain, req.email, req.token)
+        if not jira_service.test_connection():
+            raise Exception("Invalid Jira credentials or server.")
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Failed to connect to Jira: {str(e)}")
 
     # Remove any existing credentials for this user
     db.query(JiraCredential).filter(JiraCredential.user_id == user.id).delete()
