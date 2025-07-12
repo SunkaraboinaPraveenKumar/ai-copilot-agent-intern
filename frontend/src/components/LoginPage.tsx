@@ -4,10 +4,15 @@ import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 export function LoginPage() {
-  const { login, isLoading } = useAuth();
+  const { login, isLoading, isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
+    // If already authenticated, redirect to home
+    if (isAuthenticated) {
+      navigate('/');
+      return;
+    }
     // If auth_token is present, redirect to home
     if (localStorage.getItem('auth_token')) {
       navigate('/');
@@ -22,7 +27,7 @@ export function LoginPage() {
       // Clean up URL
       window.history.replaceState({}, document.title, window.location.pathname);
     }
-  }, [login, navigate]);
+  }, [login, navigate, isAuthenticated]);
 
   const handleGoogleLogin = async () => {
     try {

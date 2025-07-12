@@ -71,6 +71,11 @@ function App() {
     <Router>
       <Routes>
         <Route path="/auth/callback" element={<AuthCallback />} />
+        <Route path="/login" element={
+          <AuthProvider>
+            <LoginPage />
+          </AuthProvider>
+        } />
         <Route path="/*" element={
           <AuthProvider>
             <AppContent />
