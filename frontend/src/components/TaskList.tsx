@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Calendar, Clock, AlertCircle, CheckCircle, Flag, User } from 'lucide-react';
-
+import { Calendar, Clock, AlertCircle, CheckCircle, Flag, User, ChevronDown, ChevronUp } from 'lucide-react';
 import { tasksAPI } from '../services/api';
+import { TaskAnalysis } from './TaskAnalysis';
+import { WeeklySummary } from './WeeklySummary';
 
 // Define a Task type for better type safety (adjust fields as needed)
 type Task = {
@@ -22,6 +23,8 @@ export function TaskList() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [showAnalysis, setShowAnalysis] = useState(false);
+  const [showWeeklySummary, setShowWeeklySummary] = useState(false);
 
   useEffect(() => {
     fetchTasks();
@@ -136,6 +139,38 @@ export function TaskList() {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
+      {/* Controls */}
+      <div className="mb-6 space-y-4">
+        <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+          <div className="flex space-x-4">
+            <button
+              onClick={() => setShowAnalysis(!showAnalysis)}
+              className="flex items-center space-x-2 text-blue-600 hover:text-blue-700"
+            >
+              <span>Task Analysis</span>
+              {showAnalysis ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+            </button>
+            <button
+              onClick={() => setShowWeeklySummary(!showWeeklySummary)}
+              className="flex items-center space-x-2 text-purple-600 hover:text-purple-700"
+            >
+              <span>Weekly Summary</span>
+              {showWeeklySummary ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+            </button>
+          </div>
+        </div>
+
+        {/* Task Analysis Section */}
+        {showAnalysis && (
+          <TaskAnalysis className="mb-6" />
+        )}
+
+        {/* Weekly Summary Section */}
+        {showWeeklySummary && (
+          <WeeklySummary className="mb-6" />
+        )}
+      </div>
+
       <div className="mb-6">
         <h2 className="text-3xl font-bold text-gray-900 mb-2">Tasks & Events</h2>
         <p className="text-gray-600">Manage your schedule and track your progress</p>

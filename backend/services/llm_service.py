@@ -48,7 +48,7 @@ When responding:
 4. Use the context from integrated services
 5. Format responses clearly with bullet points when listing items
 
-Always maintain a professional, helpful tone while being efficient with information in markdown format."""
+Always maintain a professional, helpful tone while being efficient with information in **markdown** format."""
 
         # Create prompt template
         self.prompt_template = ChatPromptTemplate.from_messages([

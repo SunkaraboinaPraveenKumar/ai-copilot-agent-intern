@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Calendar, GitBranch, Clock, AlertTriangle, CheckCircle, TrendingUp, RefreshCw } from 'lucide-react';
 import { tasksAPI, TaskSummary as TaskSummaryType } from '../services/api';
 

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, Calendar, Mail, FileText, GitBranch, Users, Settings, LogOut, Shield, Activity } from 'lucide-react';
+import { useState } from 'react';
+import { X, Calendar, Mail, FileText, GitBranch, Settings, LogOut, Shield, Activity } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useIntegrations } from '../contexts/IntegrationsContext';
 import { IntegrationCard } from './IntegrationCard';
@@ -110,7 +110,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           </div>
         )}
 
-        {activeTab === 'settings' && (
+        {/* {activeTab === 'settings' && (
           <div className="p-4 space-y-4">
             <div>
               <h3 className="text-sm font-medium text-gray-900 mb-3">AI Model</h3>
@@ -154,7 +154,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
 
       {/* Footer */}

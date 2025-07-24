@@ -4533,3 +4533,863 @@ During task with name 'chatbot' and id '7412b409-6df0-711c-d5df-dafa4c938950'
 2025-07-11 13:57:54,196 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752224047}
 2025-07-11 13:57:54,207 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
 2025-07-11 13:57:56,167 - middleware.logging - INFO - Response: 200 in 1.975s
+2025-07-12 12:25:39,635 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-12 12:25:39,642 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-12 12:25:39,697 - utils.error_handler - ERROR - HTTP Exception: 401 - Invalid token
+2025-07-12 12:25:39,698 - utils.error_handler - ERROR - HTTP Exception: 401 - Invalid token
+2025-07-12 12:25:39,700 - middleware.logging - INFO - Response: 401 in 0.066s
+2025-07-12 12:25:39,703 - middleware.logging - INFO - Response: 401 in 0.061s
+2025-07-12 12:25:46,391 - middleware.logging - INFO - Request: GET /auth/google from 127.0.0.1
+2025-07-12 12:25:46,394 - middleware.logging - INFO - Response: 307 in 0.003s
+2025-07-12 12:25:56,436 - middleware.logging - INFO - Request: GET /auth/google/callback from 127.0.0.1
+2025-07-12 12:25:56,728 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:25:57,798 - middleware.logging - INFO - Response: 307 in 1.361s
+2025-07-12 12:26:00,861 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-12 12:26:00,865 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-12 12:26:00,889 - middleware.logging - INFO - Response: 200 in 0.028s
+2025-07-12 12:26:00,893 - middleware.logging - INFO - Response: 200 in 0.028s
+2025-07-12 12:26:01,198 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-12 12:26:01,199 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:26:01,200 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:26:01,202 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:26:01,204 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:26:02,996 - middleware.logging - INFO - Response: 200 in 1.798s
+2025-07-12 12:26:03,000 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-12 12:26:03,002 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:26:03,002 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:26:03,004 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:26:03,005 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:26:03,500 - middleware.logging - INFO - Response: 200 in 0.500s
+2025-07-12 12:27:05,728 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:27:05,729 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:05,731 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:05,733 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:27:05,733 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:05,735 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:05,735 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:05,736 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:05,739 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:05,740 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:05,749 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:27:08,126 - middleware.logging - INFO - Response: 200 in 2.398s
+2025-07-12 12:27:08,137 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:27:09,818 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:27:09,821 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:09,823 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:09,825 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:09,826 - middleware.logging - INFO - Response: 200 in 4.092s
+2025-07-12 12:27:09,826 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:09,832 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:27:09,834 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:09,835 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:09,844 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:27:11,693 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:11,695 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:11,696 - middleware.logging - INFO - Response: 200 in 1.877s
+2025-07-12 12:27:11,707 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:27:13,591 - middleware.logging - INFO - Response: 200 in 3.759s
+2025-07-12 12:27:18,310 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-12 12:27:18,312 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:18,314 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:18,316 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:27:18,317 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:27:18,381 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:27:24,386 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:27:25,626 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:27:29,303 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': 'What tasks are due this week?'}]
+2025-07-12 12:27:29,787 - root - INFO - [chat] thread_id: user_1_1752303438
+2025-07-12 12:27:32,475 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 12:27:32,533 - middleware.logging - INFO - Response: 200 in 14.224s
+2025-07-12 12:28:26,128 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:28:26,130 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:26,132 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:26,133 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:28:26,136 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:26,137 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:26,138 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:26,138 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:26,140 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:26,169 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:26,180 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:28:27,888 - middleware.logging - INFO - Response: 200 in 1.759s
+2025-07-12 12:28:27,894 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:28:29,702 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:28:29,704 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:29,706 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:29,707 - middleware.logging - INFO - Response: 200 in 3.573s
+2025-07-12 12:28:29,707 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:29,709 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:29,711 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:28:29,712 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:29,714 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:29,727 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:28:31,168 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:31,168 - middleware.logging - INFO - Response: 200 in 1.466s
+2025-07-12 12:28:31,169 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:31,175 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:28:32,796 - middleware.logging - INFO - Response: 200 in 3.084s
+2025-07-12 12:28:40,712 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:28:40,713 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:28:40,714 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:40,715 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:40,719 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:40,720 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:40,721 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:40,722 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:40,723 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:40,724 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:40,734 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:28:42,197 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:28:43,648 - middleware.logging - INFO - Response: 200 in 2.936s
+2025-07-12 12:28:43,650 - middleware.logging - INFO - Response: 200 in 2.939s
+2025-07-12 12:28:43,653 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:28:43,655 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:43,657 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:43,658 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:28:43,660 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:43,660 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:43,661 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:43,662 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:43,663 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:28:43,665 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:28:43,672 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:28:45,406 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:28:47,047 - middleware.logging - INFO - Response: 200 in 3.394s
+2025-07-12 12:28:47,051 - middleware.logging - INFO - Response: 200 in 3.393s
+2025-07-12 12:30:00,262 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-12 12:30:00,264 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:00,265 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:00,266 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:00,267 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:00,862 - middleware.logging - INFO - Response: 200 in 0.599s
+2025-07-12 12:30:00,867 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-12 12:30:00,868 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:00,869 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:00,870 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:00,872 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:01,208 - middleware.logging - INFO - Response: 200 in 0.341s
+2025-07-12 12:30:21,757 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-12 12:30:21,770 - middleware.logging - INFO - Response: 200 in 0.013s
+2025-07-12 12:30:21,777 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-12 12:30:21,787 - middleware.logging - INFO - Response: 200 in 0.010s
+2025-07-12 12:30:21,993 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-12 12:30:21,994 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:21,996 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:21,997 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:21,999 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:22,353 - middleware.logging - INFO - Response: 200 in 0.361s
+2025-07-12 12:30:22,358 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-12 12:30:22,360 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:22,362 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:22,364 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:22,365 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:22,657 - middleware.logging - INFO - Response: 200 in 0.299s
+2025-07-12 12:30:27,061 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-12 12:30:27,066 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:27,067 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:27,072 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:30:27,073 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:30:27,146 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:30:33,664 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:30:34,998 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:30:38,878 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': "Give me a summary of this week's progress"}]
+2025-07-12 12:30:38,907 - root - INFO - [chat] thread_id: user_1_1752303627
+2025-07-12 12:30:40,476 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 12:30:40,513 - middleware.logging - INFO - Response: 200 in 13.451s
+2025-07-12 12:36:01,686 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-12 12:36:01,689 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:36:01,690 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:36:01,691 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:36:01,691 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:36:01,714 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:36:07,961 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:36:09,266 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:36:12,030 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': "Give me a summary of this week's progress"}, {'role': 'assistant', 'content': "### Weekly Progress Summary\nBased on the integrated services, here's a summary of this week's progress:\n\n* **Emails**: You have 10 unread emails, mostly related to learning opportunities, hiring challenges, and newsletters.\n* **Calendar Events**: You have 2 upcoming events scheduled for today:\n  * HWI at 10:00 AM\n  * Flipkart Grid at 2:30 PM\n* **Google Drive Files**: You have been working on several projects, with recent modifications to:\n  * Linear NN for images.ipynb (modified 8 hours ago)\n  * ResNet -PyTorch-5-flowers.ipynb (modified yesterday)\n  * Other projects related to Agentic RAG, Multi-agent frameworks, and Vision agents (modified last week)\n\n### Recommendations\nTo stay on track, consider the following:\n* Review and respond to urgent emails\n* Prepare for the scheduled events today\n* Allocate time to work on ongoing projects, focusing on the most critical tasks first\n\nPlease let me know if you need help with task prioritization or scheduling."}, {'role': 'user', 'content': 'what are those emails'}]
+2025-07-12 12:36:12,041 - root - INFO - [chat] thread_id: user_1_1752303627
+2025-07-12 12:36:14,435 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 12:36:14,457 - middleware.logging - INFO - Response: 200 in 12.771s
+2025-07-12 12:36:33,689 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-12 12:36:33,695 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:36:33,696 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:36:33,699 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:36:33,701 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:36:33,735 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:36:39,605 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:36:40,913 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:36:43,879 - root - INFO - [chat] thread_id: user_1_1752303627
+2025-07-12 12:36:44,797 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 12:36:44,817 - middleware.logging - INFO - Response: 200 in 11.128s
+2025-07-12 12:38:06,765 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-12 12:38:06,767 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:38:06,768 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:38:06,769 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:38:06,770 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:38:06,796 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:38:12,667 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:38:13,810 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:38:16,398 - root - INFO - [chat] thread_id: user_1_1752303627
+2025-07-12 12:38:17,673 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 12:38:17,692 - middleware.logging - INFO - Response: 200 in 10.927s
+2025-07-12 12:40:30,128 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-12 12:40:30,132 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:40:30,137 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:40:30,139 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:40:30,141 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:40:30,250 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:40:36,739 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:40:38,076 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:40:41,816 - root - INFO - [chat] thread_id: user_1_1752303627
+2025-07-12 12:40:43,268 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 12:40:43,324 - middleware.logging - INFO - Response: 200 in 13.197s
+2025-07-12 12:40:55,671 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-12 12:40:55,674 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:40:55,676 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:40:55,679 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:40:55,680 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:40:55,709 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:02,038 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:03,470 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:06,913 - root - INFO - [chat] thread_id: user_1_1752303627
+2025-07-12 12:41:06,942 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:41:06,943 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:41:06,945 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:06,947 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:06,952 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:06,953 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:06,956 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:06,957 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:06,958 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:06,959 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:06,979 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:08,071 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 12:41:09,066 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:10,802 - middleware.logging - INFO - Response: 200 in 3.860s
+2025-07-12 12:41:10,828 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:41:10,830 - middleware.logging - INFO - Response: 200 in 3.886s
+2025-07-12 12:41:10,833 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:10,834 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:10,838 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:41:10,839 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:10,842 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:10,843 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:10,843 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:10,846 - middleware.logging - INFO - Response: 200 in 15.175s
+2025-07-12 12:41:10,849 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:10,850 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:10,860 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:12,825 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:14,706 - middleware.logging - INFO - Response: 200 in 3.879s
+2025-07-12 12:41:14,710 - middleware.logging - INFO - Response: 200 in 3.871s
+2025-07-12 12:41:27,382 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:41:27,384 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:27,385 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:27,386 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:27,387 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:27,398 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:29,271 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:41:29,273 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:29,274 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:29,276 - middleware.logging - INFO - Response: 200 in 1.893s
+2025-07-12 12:41:29,279 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:29,281 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:29,282 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-12 12:41:29,284 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:29,285 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:29,296 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:29,298 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:29,312 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:31,228 - middleware.logging - INFO - Response: 200 in 1.958s
+2025-07-12 12:41:31,239 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:33,165 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-12 12:41:33,167 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:33,168 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:33,170 - middleware.logging - INFO - Response: 200 in 3.888s
+2025-07-12 12:41:33,171 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MjMwNTE1N30.HbdfjSJsCWEelU4TAm_FoRsYTrZ4dVOb8xdxdZwUNMI
+2025-07-12 12:41:33,173 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1752305157}
+2025-07-12 12:41:33,185 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-12 12:41:34,978 - middleware.logging - INFO - Response: 200 in 1.813s
+2025-07-24 11:41:24,948 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 11:41:25,132 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 11:41:25,353 - utils.error_handler - ERROR - HTTP Exception: 401 - Invalid token
+2025-07-24 11:41:25,360 - utils.error_handler - ERROR - HTTP Exception: 401 - Invalid token
+2025-07-24 11:41:25,366 - middleware.logging - INFO - Response: 401 in 0.419s
+2025-07-24 11:41:25,391 - middleware.logging - INFO - Response: 401 in 0.260s
+2025-07-24 11:41:46,846 - middleware.logging - INFO - Request: GET /auth/google from 127.0.0.1
+2025-07-24 11:41:46,849 - middleware.logging - INFO - Response: 307 in 0.003s
+2025-07-24 11:42:10,631 - middleware.logging - INFO - Request: GET /auth/google/callback from 127.0.0.1
+2025-07-24 11:42:11,050 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:42:12,197 - middleware.logging - INFO - Response: 307 in 1.566s
+2025-07-24 11:42:15,033 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 11:42:15,035 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 11:42:15,061 - middleware.logging - INFO - Response: 200 in 0.027s
+2025-07-24 11:42:15,066 - middleware.logging - INFO - Response: 200 in 0.030s
+2025-07-24 11:42:15,204 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 11:42:15,206 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:42:15,207 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:42:15,209 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:42:15,210 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:42:15,933 - middleware.logging - INFO - Response: 200 in 0.728s
+2025-07-24 11:42:15,938 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 11:42:15,939 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:42:15,941 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:42:15,942 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:42:15,943 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:42:16,466 - middleware.logging - INFO - Response: 200 in 0.528s
+2025-07-24 11:42:58,942 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 11:42:58,944 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:42:58,945 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:42:58,948 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:42:58,950 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:42:59,683 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:43:02,684 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 11:43:02,689 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:43:02,690 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:43:02,691 - middleware.logging - INFO - Response: 200 in 3.749s
+2025-07-24 11:43:02,693 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:43:02,695 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:43:02,697 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 11:43:02,699 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:43:02,701 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:43:02,706 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:43:02,709 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:43:04,721 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:43:08,941 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:43:12,147 - middleware.logging - INFO - Response: 200 in 9.464s
+2025-07-24 11:43:12,153 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 11:43:12,155 - middleware.logging - INFO - Response: 200 in 9.459s
+2025-07-24 11:43:12,158 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:43:12,159 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:43:12,162 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:43:12,163 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:43:14,287 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:43:16,727 - middleware.logging - INFO - Response: 200 in 4.574s
+2025-07-24 11:43:31,293 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-24 11:43:31,296 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:43:31,297 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:43:31,298 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:43:31,299 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:43:32,395 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:43:42,531 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:43:43,638 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:43:45,988 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': "What's on my calendar for today?"}]
+2025-07-24 11:43:46,343 - root - INFO - [chat] thread_id: user_1_1753337611
+2025-07-24 11:43:53,281 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 11:43:53,302 - middleware.logging - INFO - Response: 200 in 22.009s
+2025-07-24 11:47:54,280 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-24 11:47:54,283 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:47:54,284 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:47:54,286 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:47:54,287 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:47:55,254 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:48:05,480 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:48:07,002 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:48:10,280 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': "What's on my calendar for today?"}, {'role': 'assistant', 'content': "### Today's Calendar Events\nAfter reviewing your Google Calendar, I found the following events scheduled for today:\n* No events are currently scheduled for today.\n\nHowever, I recommend checking your calendar regularly for any updates or newly added events. If you'd like, I can also help you schedule tasks or set reminders based on your priorities and deadlines. \n\n### Next Steps\nPlease let me know if you have any specific tasks or projects you'd like to work on today, and I'll be happy to assist you with prioritization and scheduling advice."}, {'role': 'user', 'content': 'Whats on my gmail'}]
+2025-07-24 11:48:10,296 - root - INFO - [chat] thread_id: user_1_1753337611
+2025-07-24 11:48:11,271 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 11:48:11,298 - middleware.logging - INFO - Response: 200 in 17.018s
+2025-07-24 11:48:43,165 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-24 11:48:43,169 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:48:43,170 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:48:43,172 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:48:43,173 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:48:44,478 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:48:51,150 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:48:53,103 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:48:56,981 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': "What's on my calendar for today?"}, {'role': 'assistant', 'content': "### Today's Calendar Events\nAfter reviewing your Google Calendar, I found the following events scheduled for today:\n* No events are currently scheduled for today.\n\nHowever, I recommend checking your calendar regularly for any updates or newly added events. If you'd like, I can also help you schedule tasks or set reminders based on your priorities and deadlines. \n\n### Next Steps\nPlease let me know if you have any specific tasks or projects you'd like to work on today, and I'll be happy to assist you with prioritization and scheduling advice."}, {'role': 'user', 'content': 'Whats on my gmail'}, {'role': 'assistant', 'content': '### Unread Emails in Gmail\nYou have 10 unread emails in your Gmail inbox. Here are the subjects and senders:\n* Google One: Welcome – you now have the Google AI Pro plan\n* Google Play: Your Google Play Order Receipt from 24 Jul 2025\n* Google Payments: Google: Update your tax info\n* Dr. Sreedath Panat (MIT PhD): Build LLM from scratch and deploy in production\n* Rahul from ImageKit.io: Edit images with a prompt \n* 5 other emails from various senders\n\n### Recommended Action\nI suggest addressing the email from Google Payments regarding updating your tax info, as it may be time-sensitive. You may also want to review the email from Dr. Sreedath Panat (MIT PhD) about building an LLM from scratch, as it could be related to your current projects or interests.\n\n### Next Steps\nWould you like me to:\n* Summarize the content of a specific email?\n* Help you respond to an email?\n* Prioritize your emails based on urgency and importance?'}, {'role': 'user', 'content': 'google drive'}]
+2025-07-24 11:48:56,996 - root - INFO - [chat] thread_id: user_1_1753337611
+2025-07-24 11:48:58,172 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 11:48:58,191 - middleware.logging - INFO - Response: 200 in 15.025s
+2025-07-24 11:49:30,646 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 11:49:30,648 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 11:49:30,650 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:49:30,652 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:49:30,654 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:49:30,656 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:49:30,657 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:49:30,659 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:49:30,661 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:49:30,665 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:49:32,631 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:49:35,810 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:49:37,738 - middleware.logging - INFO - Response: 200 in 7.092s
+2025-07-24 11:49:37,743 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 11:49:37,744 - middleware.logging - INFO - Response: 200 in 7.096s
+2025-07-24 11:49:37,747 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:49:37,748 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:49:37,751 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 11:49:37,751 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:49:37,755 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:49:37,757 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:49:37,759 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:49:37,762 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:49:37,763 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:49:38,089 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:49:40,272 - middleware.logging - INFO - Response: 200 in 2.528s
+2025-07-24 11:49:41,074 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:49:43,117 - middleware.logging - INFO - Response: 200 in 5.366s
+2025-07-24 11:51:03,833 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 11:51:03,834 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 11:51:03,836 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:51:03,837 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:51:03,839 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:51:03,840 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:51:03,842 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:51:03,843 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:51:03,844 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:51:03,845 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:51:04,265 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:51:06,736 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:51:08,711 - middleware.logging - INFO - Response: 200 in 4.879s
+2025-07-24 11:51:08,714 - middleware.logging - INFO - Response: 200 in 4.881s
+2025-07-24 11:51:08,718 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 11:51:08,721 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:51:08,723 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:51:08,724 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 11:51:08,726 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:51:08,727 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:51:08,728 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:51:08,729 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:51:08,733 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:51:08,735 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:51:09,417 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:51:11,900 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:51:14,094 - middleware.logging - INFO - Response: 200 in 5.375s
+2025-07-24 11:51:14,098 - middleware.logging - INFO - Response: 200 in 5.374s
+2025-07-24 11:52:13,205 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 11:52:13,207 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 11:52:13,209 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:13,210 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:13,212 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:13,214 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:13,216 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:13,218 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:13,219 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:13,220 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:13,738 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:52:17,992 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:52:20,372 - middleware.logging - INFO - Response: 200 in 7.167s
+2025-07-24 11:52:20,375 - middleware.logging - INFO - Response: 200 in 7.168s
+2025-07-24 11:52:20,381 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 11:52:20,383 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 11:52:20,384 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:20,386 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:20,393 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:20,396 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:20,399 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:20,399 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:20,400 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:20,401 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:20,708 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:52:22,990 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:52:25,023 - middleware.logging - INFO - Response: 200 in 4.642s
+2025-07-24 11:52:25,026 - middleware.logging - INFO - Response: 200 in 4.643s
+2025-07-24 11:52:36,667 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-24 11:52:36,670 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:36,672 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:36,673 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzMzOTMzMn0.DeLHw8Fm8PL1Lb6UyBnad2_DAqijchfDreGMoyKP7ag
+2025-07-24 11:52:36,674 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753339332}
+2025-07-24 11:52:37,264 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:52:47,255 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:52:49,335 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 11:52:53,162 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': "What's on my calendar for today?"}, {'role': 'assistant', 'content': "### Today's Calendar Events\nAfter reviewing your Google Calendar, I found the following events scheduled for today:\n* No events are currently scheduled for today.\n\nHowever, I recommend checking your calendar regularly for any updates or newly added events. If you'd like, I can also help you schedule tasks or set reminders based on your priorities and deadlines. \n\n### Next Steps\nPlease let me know if you have any specific tasks or projects you'd like to work on today, and I'll be happy to assist you with prioritization and scheduling advice."}, {'role': 'user', 'content': 'Whats on my gmail'}, {'role': 'assistant', 'content': '### Unread Emails in Gmail\nYou have 10 unread emails in your Gmail inbox. Here are the subjects and senders:\n* Google One: Welcome – you now have the Google AI Pro plan\n* Google Play: Your Google Play Order Receipt from 24 Jul 2025\n* Google Payments: Google: Update your tax info\n* Dr. Sreedath Panat (MIT PhD): Build LLM from scratch and deploy in production\n* Rahul from ImageKit.io: Edit images with a prompt \n* 5 other emails from various senders\n\n### Recommended Action\nI suggest addressing the email from Google Payments regarding updating your tax info, as it may be time-sensitive. You may also want to review the email from Dr. Sreedath Panat (MIT PhD) about building an LLM from scratch, as it could be related to your current projects or interests.\n\n### Next Steps\nWould you like me to:\n* Summarize the content of a specific email?\n* Help you respond to an email?\n* Prioritize your emails based on urgency and importance?'}, {'role': 'user', 'content': 'google drive'}, {'role': 'assistant', 'content': '### Recent Google Drive Files\nHere are the 5 most recent files in your Google Drive:\n* **Linear NN for images.ipynb** (modified: 2025-07-12T04:00:44.013Z)\n* **ResNet -PyTorch-5-flowers.ipynb** (modified: 2025-07-11T10:40:52.319Z)\n* **Agentic RAG using LlamaIndex.ipynb** (modified: 2025-07-04T05:06:18.330Z)\n* **Multi-agent frameworks using Smolagents.ipynb** (modified: 2025-07-04T05:03:13.323Z)\n* **Vision agents using Smolagents.ipynb** (modified: 2025-07-04T05:01:34.296Z)\n\n### Recommended Action\nIt appears you have been working on various machine learning and AI-related projects. I suggest reviewing the **Linear NN for images.ipynb** and **ResNet -PyTorch-5-flowers.ipynb** files, as they were modified most recently.\n\n### Next Steps\nWould you like me to:\n* Help you organize your Google Drive files into folders or categories?\n* Provide suggestions for your current projects based on your recent file activity?\n* Assist you in searching for specific files or documents in your Google Drive?'}, {'role': 'user', 'content': 'latest calendar events'}]
+2025-07-24 11:52:53,185 - root - INFO - [chat] thread_id: user_1_1753337611
+2025-07-24 11:52:54,877 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 11:52:54,902 - middleware.logging - INFO - Response: 200 in 18.235s
+2025-07-24 21:30:34,880 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 21:30:34,889 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 21:30:34,912 - utils.error_handler - ERROR - HTTP Exception: 401 - Invalid token
+2025-07-24 21:30:34,914 - utils.error_handler - ERROR - HTTP Exception: 401 - Invalid token
+2025-07-24 21:30:34,917 - middleware.logging - INFO - Response: 401 in 0.036s
+2025-07-24 21:30:34,920 - middleware.logging - INFO - Response: 401 in 0.031s
+2025-07-24 21:30:42,526 - middleware.logging - INFO - Request: GET /auth/google from 127.0.0.1
+2025-07-24 21:30:42,530 - middleware.logging - INFO - Response: 307 in 0.004s
+2025-07-24 21:30:46,949 - middleware.logging - INFO - Request: GET /auth/google/callback from 127.0.0.1
+2025-07-24 21:30:47,566 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:30:48,969 - middleware.logging - INFO - Response: 307 in 2.020s
+2025-07-24 21:30:56,994 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 21:30:56,998 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 21:30:57,027 - middleware.logging - INFO - Response: 200 in 0.033s
+2025-07-24 21:30:57,029 - middleware.logging - INFO - Response: 200 in 0.032s
+2025-07-24 21:30:57,365 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 21:30:57,367 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:30:57,370 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:30:57,372 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:30:57,373 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:30:58,297 - middleware.logging - INFO - Response: 200 in 0.932s
+2025-07-24 21:30:58,303 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 21:30:58,305 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:30:58,306 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:30:58,308 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:30:58,310 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:30:59,122 - middleware.logging - INFO - Response: 200 in 0.820s
+2025-07-24 21:31:32,417 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 21:31:32,419 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:31:32,420 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:31:32,423 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:31:32,425 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:31:32,436 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:31:34,689 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 21:31:34,695 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:31:34,696 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:31:34,697 - middleware.logging - INFO - Response: 200 in 2.280s
+2025-07-24 21:31:34,700 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:31:34,701 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:31:34,703 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 21:31:34,706 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:31:34,707 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:31:34,711 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:31:34,714 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:31:34,722 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:31:36,863 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:31:38,739 - middleware.logging - INFO - Response: 200 in 4.050s
+2025-07-24 21:31:38,744 - middleware.logging - INFO - Response: 200 in 4.041s
+2025-07-24 21:31:38,747 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 21:31:38,749 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:31:38,750 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:31:38,752 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:31:38,754 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:31:38,766 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:31:40,851 - middleware.logging - INFO - Response: 200 in 2.104s
+2025-07-24 21:51:07,236 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 21:51:07,238 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 21:51:07,241 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:07,245 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:07,248 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:07,248 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:07,253 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:07,255 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:07,256 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:07,257 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:07,324 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:51:13,093 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:51:18,505 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-24 21:51:18,509 - middleware.logging - INFO - Response: 200 in 11.272s
+2025-07-24 21:51:18,513 - middleware.logging - INFO - Response: 200 in 11.278s
+2025-07-24 21:51:18,521 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 21:51:18,540 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:18,544 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:18,547 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 21:51:18,552 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:18,556 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:18,558 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:18,559 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:18,559 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:18,561 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:18,563 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:18,565 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:18,565 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:51:18,567 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:51:18,578 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:51:21,181 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:51:37,243 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:51:38,798 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:51:42,670 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': "Give me a summary of this week's progress"}]
+2025-07-24 21:51:43,037 - root - INFO - [chat] thread_id: user_1_1753374081
+2025-07-24 21:51:43,071 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:51:45,041 - middleware.logging - INFO - Response: 200 in 26.520s
+2025-07-24 21:51:45,043 - middleware.logging - INFO - Response: 200 in 26.497s
+2025-07-24 21:51:47,256 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 21:51:47,299 - middleware.logging - INFO - Response: 200 in 28.794s
+2025-07-24 21:56:32,498 - middleware.logging - INFO - Request: POST /integrations/jira/connect from 127.0.0.1
+2025-07-24 21:56:32,502 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:56:32,502 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:56:32,503 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:56:32,505 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:56:34,917 - utils.error_handler - ERROR - HTTP Exception: 400 - Failed to connect to Jira: Invalid Jira credentials or server.
+2025-07-24 21:56:34,919 - middleware.logging - INFO - Response: 400 in 2.422s
+2025-07-24 21:57:54,341 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 21:57:54,343 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 21:57:54,360 - middleware.logging - INFO - Response: 200 in 0.019s
+2025-07-24 21:57:54,362 - middleware.logging - INFO - Response: 200 in 0.019s
+2025-07-24 21:57:54,643 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 21:57:54,644 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:57:54,645 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:57:54,646 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:57:54,647 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:57:56,063 - middleware.logging - INFO - Response: 200 in 1.420s
+2025-07-24 21:57:56,069 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 21:57:56,071 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:57:56,072 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:57:56,075 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:57:56,076 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:57:56,604 - middleware.logging - INFO - Response: 200 in 0.535s
+2025-07-24 21:58:31,533 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 21:58:31,534 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 21:58:31,536 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:58:31,537 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:58:31,539 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:58:31,540 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:58:31,542 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:58:31,543 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:58:31,544 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:58:31,545 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:58:31,555 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:58:33,957 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:58:35,581 - middleware.logging - INFO - Response: 200 in 4.048s
+2025-07-24 21:58:35,585 - middleware.logging - INFO - Response: 200 in 4.050s
+2025-07-24 21:58:35,588 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 21:58:35,590 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 21:58:35,592 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:58:35,593 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:58:35,595 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:58:35,596 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:58:35,598 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:58:35,599 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:58:35,599 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:58:35,600 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:58:35,610 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:58:37,487 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:58:40,219 - middleware.logging - INFO - Response: 200 in 4.631s
+2025-07-24 21:58:40,222 - middleware.logging - INFO - Response: 200 in 4.632s
+2025-07-24 21:59:28,570 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 21:59:28,571 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:59:28,573 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:59:28,574 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:59:28,576 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:59:28,587 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:59:31,096 - middleware.logging - INFO - Response: 200 in 2.528s
+2025-07-24 21:59:45,257 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 21:59:45,258 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:59:45,259 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:59:45,260 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 21:59:45,261 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753374648}
+2025-07-24 21:59:45,267 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 21:59:46,972 - middleware.logging - INFO - Response: 200 in 1.715s
+2025-07-24 22:01:51,556 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 22:01:51,557 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NDY0OH0.OS0vhew6-rIBueS88GeNYDYCGkC8ZGf1E6qZxuxdR9A
+2025-07-24 22:01:51,558 - root - ERROR - Token verification failed: 401: Invalid authentication credentials
+2025-07-24 22:01:51,559 - utils.error_handler - ERROR - HTTP Exception: 401 - Invalid authentication credentials
+2025-07-24 22:01:51,560 - middleware.logging - INFO - Response: 401 in 0.004s
+2025-07-24 22:06:19,514 - middleware.logging - INFO - Request: GET /auth/google from 127.0.0.1
+2025-07-24 22:06:19,516 - middleware.logging - INFO - Response: 307 in 0.003s
+2025-07-24 22:06:39,764 - middleware.logging - INFO - Request: GET /auth/google/callback from 127.0.0.1
+2025-07-24 22:06:47,969 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:06:50,425 - middleware.logging - INFO - Response: 307 in 10.661s
+2025-07-24 22:06:54,948 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 22:06:54,950 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 22:06:54,970 - middleware.logging - INFO - Response: 200 in 0.022s
+2025-07-24 22:06:54,972 - middleware.logging - INFO - Response: 200 in 0.022s
+2025-07-24 22:06:55,113 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 22:06:55,115 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:06:55,116 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:06:55,118 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:06:55,118 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:06:56,822 - middleware.logging - INFO - Response: 200 in 1.709s
+2025-07-24 22:06:56,827 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 22:06:56,829 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:06:56,830 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:06:56,831 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:06:56,832 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:06:57,304 - middleware.logging - INFO - Response: 200 in 0.477s
+2025-07-24 22:07:18,413 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 22:07:18,420 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:07:18,425 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:07:18,426 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 22:07:18,429 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:07:18,429 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:07:18,430 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:07:18,431 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:07:18,434 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:07:18,435 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:07:18,486 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:07:21,498 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:07:27,222 - middleware.logging - INFO - Response: 200 in 8.809s
+2025-07-24 22:07:27,225 - middleware.logging - INFO - Response: 200 in 8.799s
+2025-07-24 22:07:33,693 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 22:07:33,695 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 22:07:33,697 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:07:33,701 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:07:33,703 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:07:33,706 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:07:33,708 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:07:33,709 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:07:33,709 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:07:33,713 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:07:33,768 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:07:35,688 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:07:37,469 - middleware.logging - INFO - Response: 200 in 3.776s
+2025-07-24 22:07:37,471 - middleware.logging - INFO - Response: 200 in 3.776s
+2025-07-24 22:09:28,893 - middleware.logging - INFO - Request: POST /integrations/jira/connect from 127.0.0.1
+2025-07-24 22:09:28,898 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:09:28,903 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:09:28,905 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:09:28,906 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:09:29,969 - middleware.logging - INFO - Response: 200 in 1.077s
+2025-07-24 22:09:29,981 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 22:09:29,982 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:09:29,984 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:09:29,988 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:09:29,989 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:09:30,428 - middleware.logging - INFO - Response: 200 in 0.447s
+2025-07-24 22:09:38,896 - middleware.logging - INFO - Request: POST /chat/ from 127.0.0.1
+2025-07-24 22:09:38,900 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:09:38,901 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:09:38,903 - root - INFO - [chat] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:09:38,903 - root - INFO - [chat] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:09:38,964 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:09:45,474 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:09:46,944 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:09:50,735 - root - INFO - [chat] messages_dict: [{'role': 'user', 'content': 'What are my assigned JIRA tickets?'}]
+2025-07-24 22:09:50,766 - root - INFO - [chat] thread_id: user_1_1753375178
+2025-07-24 22:09:53,043 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:09:53,083 - middleware.logging - INFO - Response: 200 in 14.187s
+2025-07-24 22:12:45,293 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 22:12:45,294 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:12:45,295 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:12:45,298 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 22:12:45,299 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:12:45,300 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:12:45,301 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:12:45,302 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:12:45,303 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:12:45,304 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:12:45,312 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:12:48,973 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:12:53,730 - middleware.logging - INFO - Response: 200 in 8.437s
+2025-07-24 22:12:53,733 - middleware.logging - INFO - Response: 200 in 8.435s
+2025-07-24 22:12:53,736 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 22:12:53,738 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:12:53,740 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:12:53,741 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 22:12:53,742 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:12:53,743 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:12:53,744 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:12:53,744 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:12:53,745 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:12:53,747 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:12:53,755 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:12:56,958 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:13:02,561 - middleware.logging - INFO - Response: 200 in 8.825s
+2025-07-24 22:13:02,564 - middleware.logging - INFO - Request: GET /tasks/analysis from 127.0.0.1
+2025-07-24 22:13:02,565 - middleware.logging - INFO - Response: 200 in 8.824s
+2025-07-24 22:13:02,568 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:13:02,569 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:13:02,571 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:13:02,572 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:13:02,581 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:13:20,105 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:13:32,944 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:13:32,948 - middleware.logging - INFO - Request: GET /tasks/analysis from 127.0.0.1
+2025-07-24 22:13:32,951 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:13:32,952 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:13:32,953 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:13:32,954 - middleware.logging - INFO - Response: 200 in 30.392s
+2025-07-24 22:13:32,955 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:13:32,967 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:13:49,128 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:13:55,464 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:13:55,471 - middleware.logging - INFO - Response: 200 in 22.523s
+2025-07-24 22:14:30,728 - middleware.logging - INFO - Request: GET /tasks/weekly-summary from 127.0.0.1
+2025-07-24 22:14:30,730 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:14:30,731 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:14:30,732 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:14:30,733 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:14:30,743 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:14:42,727 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:14:47,403 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:14:47,413 - middleware.logging - INFO - Response: 200 in 16.684s
+2025-07-24 22:14:47,418 - middleware.logging - INFO - Request: GET /tasks/weekly-summary from 127.0.0.1
+2025-07-24 22:14:47,421 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:14:47,422 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:14:47,423 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:14:47,424 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:14:47,435 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:14:58,901 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:15:04,775 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:15:04,782 - middleware.logging - INFO - Response: 200 in 17.364s
+2025-07-24 22:15:37,956 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 22:15:37,958 - middleware.logging - INFO - Request: POST /auth/token from 127.0.0.1
+2025-07-24 22:15:37,980 - middleware.logging - INFO - Response: 200 in 0.024s
+2025-07-24 22:15:37,981 - middleware.logging - INFO - Response: 200 in 0.023s
+2025-07-24 22:15:38,053 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 22:15:38,055 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:38,056 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:38,057 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:38,058 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:38,606 - middleware.logging - INFO - Response: 200 in 0.553s
+2025-07-24 22:15:38,611 - middleware.logging - INFO - Request: GET /integrations/status from 127.0.0.1
+2025-07-24 22:15:38,613 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:38,614 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:38,615 - root - INFO - [integrations] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:38,616 - root - INFO - [integrations] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:39,816 - middleware.logging - INFO - Response: 200 in 1.205s
+2025-07-24 22:15:43,308 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 22:15:43,310 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 22:15:43,312 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:43,312 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:43,315 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:43,316 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:43,317 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:43,318 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:43,319 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:43,319 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:43,336 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:15:46,237 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:15:57,706 - middleware.logging - INFO - Response: 200 in 14.395s
+2025-07-24 22:15:57,710 - middleware.logging - INFO - Response: 200 in 14.402s
+2025-07-24 22:15:57,717 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 22:15:57,720 - middleware.logging - INFO - Request: GET /tasks/summary from 127.0.0.1
+2025-07-24 22:15:57,722 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:57,723 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:57,724 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:57,726 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:57,727 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:57,729 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:15:57,730 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:57,731 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:15:57,744 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:16:05,142 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:16:20,701 - middleware.logging - INFO - Response: 200 in 22.985s
+2025-07-24 22:16:20,704 - middleware.logging - INFO - Response: 200 in 22.984s
+2025-07-24 22:17:48,589 - middleware.logging - INFO - Request: GET /tasks/all from 127.0.0.1
+2025-07-24 22:17:48,591 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:17:48,592 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:17:48,594 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:17:48,595 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:17:48,607 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:17:52,624 - middleware.logging - INFO - Response: 200 in 4.035s
+2025-07-24 22:18:03,682 - middleware.logging - INFO - Request: GET /tasks/analysis from 127.0.0.1
+2025-07-24 22:18:03,684 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:18:03,685 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:18:03,686 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:18:03,687 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:18:03,698 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:18:18,631 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:18:25,316 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:18:25,790 - middleware.logging - INFO - Request: GET /tasks/analysis from 127.0.0.1
+2025-07-24 22:18:25,791 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:18:25,792 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:18:25,793 - middleware.logging - INFO - Response: 200 in 22.111s
+2025-07-24 22:18:25,795 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:18:25,796 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:18:25,814 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:18:36,997 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:18:47,549 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:18:47,556 - middleware.logging - INFO - Response: 200 in 21.767s
+2025-07-24 22:19:11,902 - middleware.logging - INFO - Request: GET /tasks/weekly-summary from 127.0.0.1
+2025-07-24 22:19:11,903 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:19:11,904 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:19:11,905 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:19:11,906 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:19:11,917 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:19:22,935 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:19:27,851 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:19:27,858 - middleware.logging - INFO - Response: 200 in 15.956s
+2025-07-24 22:19:27,863 - middleware.logging - INFO - Request: GET /tasks/weekly-summary from 127.0.0.1
+2025-07-24 22:19:27,865 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:19:27,866 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:19:27,868 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:19:27,869 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:19:27,885 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:19:41,090 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:19:45,998 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:19:46,005 - middleware.logging - INFO - Response: 200 in 18.142s
+2025-07-24 22:20:28,638 - middleware.logging - INFO - Request: GET /tasks/weekly-summary from 127.0.0.1
+2025-07-24 22:20:28,640 - root - INFO - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:20:28,641 - root - INFO - Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:20:28,643 - root - INFO - [tasks] Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJrdW1hcnN1bmthcmFib2luYTI3QGdtYWlsLmNvbSIsImV4cCI6MTc1MzM3NjgxMH0.4ra7igE_Ghq98dNrIeVpcrwIE81a2a75QYwBUUiqG5Q
+2025-07-24 22:20:28,644 - root - INFO - [tasks] Token payload: {'sub': '1', 'email': 'kumarsunkaraboina27@gmail.com', 'exp': 1753376810}
+2025-07-24 22:20:28,669 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:20:40,148 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-24 22:20:45,511 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-24 22:20:45,519 - middleware.logging - INFO - Response: 200 in 16.880s

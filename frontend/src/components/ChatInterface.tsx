@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Settings, Zap, Clock, CheckCircle, Bell, Maximize2 } from 'lucide-react';
 import { useChat } from '../contexts/ChatContext';
-import { useAuth } from '../contexts/AuthContext';
 import { Message } from './Message';
 import { TypingIndicator } from './TypingIndicator';
 import { QuickActions } from './QuickActions';

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { ChatInterface } from './components/ChatInterface';
-// import { Sidebar } from './components/Sidebar'; // Remove old Sidebar
 import { LoginPage } from './components/LoginPage';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { ChatProvider } from './contexts/ChatContext';
