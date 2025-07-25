@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Zap, Clock, AlertTriangle, CheckCircle, Target, Calendar } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Zap, Clock, CheckCircle, Target } from 'lucide-react';
 import { tasksAPI } from '../services/api';
 
 interface TaskAnalysisProps {

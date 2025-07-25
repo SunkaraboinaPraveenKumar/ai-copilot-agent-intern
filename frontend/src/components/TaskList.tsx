@@ -4,20 +4,22 @@ import { tasksAPI } from '../services/api';
 import { TaskAnalysis } from './TaskAnalysis';
 import { WeeklySummary } from './WeeklySummary';
 
-// Define a Task type for better type safety (adjust fields as needed)
-type Task = {
+// Define types for better type safety
+interface Task {
   id: string;
   title: string;
   description?: string;
   type?: string;
   urgent?: boolean;
   source?: string;
+  priority?: string;
+  status?: string;
   start?: string;
   end?: string;
   due_date?: string;
-  priority?: string;
-  status?: string;
-};
+  dateTime?: string;
+  endTime?: string;
+}
 
 export function TaskList() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -35,9 +37,46 @@ export function TaskList() {
     setError(null);
     try {
       const response = await tasksAPI.getAllTasks();
-      setTasks(response.data.tasks || []);
-    } catch (err) {
-      setError('Failed to load tasks');
+      
+      // Check for authentication error
+      if (response.data.error) {
+        if (response.data.message?.includes('Authentication failed: Scope has changed')) {
+          setError('Your Google access needs to be updated. Please re-authenticate to access all features.');
+          // You might want to trigger a re-authentication flow here
+          return;
+        }
+        throw new Error(response.data.message || 'Failed to load tasks');
+      }
+
+      console.log('Fetched tasks:', response.data);
+      
+      // Convert calendar events to task format if needed
+      const tasks = (response.data.tasks || []).map((task: Partial<Task>) => {
+        if (task.type === 'calendar_event') {
+          return {
+            ...task,
+            id: task.id || String(Date.now()),
+            type: 'event',
+            title: task.title || 'Untitled Event',
+            start: task.start || task.dateTime,
+            end: task.end || task.endTime,
+            source: 'Google Calendar',
+            status: 'confirmed'
+          } as Task;
+        }
+        return task as Task;
+      });
+      
+      setTasks(tasks);
+      console.log('Processed tasks:', tasks);
+    } catch (err: any) {
+      console.error('Error fetching tasks:', err);
+      const errorMessage = err.response?.data?.message || err.message || 'Failed to load tasks';
+      setError(
+        errorMessage.includes('Authentication failed') 
+          ? 'Please re-authenticate with Google to access your tasks and events.'
+          : errorMessage
+      );
     } finally {
       setIsLoading(false);
     }
@@ -77,43 +116,39 @@ export function TaskList() {
 
   const formatDateTime = (dateString: string | undefined) => {
     if (!dateString) return '';
+    // Ensure the date is parsed as UTC, then convert to Asia/Kolkata
     const date = new Date(dateString);
-    return date.toLocaleString('en-IN', {
+    const options: Intl.DateTimeFormatOptions = {
       timeZone: 'Asia/Kolkata',
       year: 'numeric',
       month: 'short',
       day: 'numeric',
       hour: '2-digit',
-      minute: '2-digit'
-    });
+      minute: '2-digit',
+      hour12: true
+    };
+    return new Intl.DateTimeFormat('en-IN', options).format(date);
   };
 
   const formatTimeRange = (start: string | undefined, end: string | undefined) => {
     if (!start || !end) return '';
-    const startTime = new Date(start).toLocaleString('en-IN', {
+    const options: Intl.DateTimeFormatOptions = {
       timeZone: 'Asia/Kolkata',
       hour: '2-digit',
-      minute: '2-digit'
-    });
-    const endTime = new Date(end).toLocaleString('en-IN', {
-      timeZone: 'Asia/Kolkata',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
+      minute: '2-digit',
+      hour12: true
+    };
+    const formatter = new Intl.DateTimeFormat('en-IN', options);
+    const startTime = formatter.format(new Date(start));
+    const endTime = formatter.format(new Date(end));
     return `${startTime} - ${endTime}`;
-  };
-
-  const isUpcoming = (dateString: string | undefined) => {
-    if (!dateString) return false;
-    const date = new Date(dateString);
-    const now = new Date();
-    return date > now;
   };
 
   const isToday = (dateString: string | undefined) => {
     if (!dateString) return false;
-    const date = new Date(dateString);
-    const today = new Date();
+    // Convert both dates to Asia/Kolkata timezone for comparison
+    const date = new Date(new Date(dateString).toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+    const today = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
     return date.toDateString() === today.toDateString();
   };
 
@@ -129,9 +164,22 @@ export function TaskList() {
   if (error) {
     return (
       <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-        <div className="flex items-center">
-          <AlertCircle className="h-5 w-5 text-red-500 mr-2" />
-          <span className="text-red-800">{error}</span>
+        <div className="flex flex-col space-y-4">
+          <div className="flex items-center">
+            <AlertCircle className="h-5 w-5 text-red-500 mr-2 flex-shrink-0" />
+            <span className="text-red-800">{error}</span>
+          </div>
+          {error.includes('re-authenticate') && (
+            <button
+              onClick={() => {
+                // Redirect to Google OAuth flow
+                window.location.href = '/api/auth/google';
+              }}
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Re-authenticate with Google
+            </button>
+          )}
         </div>
       </div>
     );
@@ -180,7 +228,6 @@ export function TaskList() {
         {tasks.map((task) => {
           const TypeIcon = getTypeIcon(task.type);
           const isEventToday = isToday(task.start || task.due_date);
-          const isEventUpcoming = isUpcoming(task.start || task.due_date);
 
           return (
             <div

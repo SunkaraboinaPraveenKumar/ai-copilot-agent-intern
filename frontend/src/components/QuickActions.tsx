@@ -1,4 +1,4 @@
-import { Calendar, Mail, GitBranch, FileText, Clock, TrendingUp } from 'lucide-react';
+import { Calendar, Mail, GitBranch, FileText, Clock, TrendingUp, Table, Presentation, FormInput } from 'lucide-react';
 
 interface QuickActionsProps {
   onActionClick: (action: string) => void;
@@ -25,6 +25,30 @@ export function QuickActions({ onActionClick }: QuickActionsProps) {
       color: 'bg-purple-500',
     },
     {
+      icon: FileText,
+      label: 'Recent documents',
+      action: 'Show me my recent Google Drive files',
+      color: 'bg-indigo-500',
+    },
+    {
+      icon: Presentation,
+      label: 'Presentations',
+      action: 'Show me my recent Google Slides presentations',
+      color: 'bg-orange-500',
+    },
+    {
+      icon: Table,
+      label: 'Spreadsheets',
+      action: 'Show me my recent Google Sheets spreadsheets',
+      color: 'bg-emerald-500',
+    },
+    {
+      icon: FormInput,
+      label: 'Forms',
+      action: 'Show me my recent Google Forms',
+      color: 'bg-pink-500',
+    },
+    {
       icon: Clock,
       label: 'Deadlines',
       action: 'What tasks are due this week?',
@@ -36,12 +60,6 @@ export function QuickActions({ onActionClick }: QuickActionsProps) {
       action: 'Give me a summary of this week\'s progress',
       color: 'bg-yellow-500',
     },
-    {
-      icon: FileText,
-      label: 'Recent documents',
-      action: 'Show me my recent Google Drive files',
-      color: 'bg-indigo-500',
-    },
   ];
 
   return (
@@ -50,7 +68,7 @@ export function QuickActions({ onActionClick }: QuickActionsProps) {
         <button
           key={index}
           onClick={() => onActionClick(action.action)}
-          className="flex flex-col items-center p-4 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 group"
+          className="flex flex-col items-center p-4 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 group mb-1"
         >
           <div className={`w-12 h-12 ${action.color} rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-200`}>
             <action.icon className="h-6 w-6 text-white" />

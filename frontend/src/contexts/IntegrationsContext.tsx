@@ -5,8 +5,20 @@ interface Integrations {
   gmail: boolean;
   calendar: boolean;
   drive: boolean;
+  forms: boolean;
+  slides: boolean;
+  sheets: boolean;
   jira: boolean;
   confluence: boolean;
+}
+
+interface GoogleServiceData {
+  forms: any[];
+  slides: any[];
+  sheets: any[];
+  gmail: any[];
+  calendar: any[];
+  drive: any[];
 }
 
 interface IntegrationsContextType {
@@ -19,8 +31,10 @@ interface IntegrationsContextType {
   isLoading: boolean;
   jiraIssues: any[];
   jiraProjects: any[];
+  googleData: GoogleServiceData;
   fetchJiraIssues: () => Promise<void>;
   fetchJiraProjects: () => Promise<void>;
+  fetchGoogleService: (service: keyof GoogleServiceData) => Promise<void>;
 }
 
 const IntegrationsContext = createContext<IntegrationsContextType | undefined>(undefined);
@@ -30,6 +44,9 @@ export function IntegrationsProvider({ children }: { children: React.ReactNode }
     gmail: false,
     calendar: false,
     drive: false,
+    forms: false,
+    slides: false,
+    sheets: false,
     jira: false,
     confluence: false,
   });
@@ -38,6 +55,14 @@ export function IntegrationsProvider({ children }: { children: React.ReactNode }
   const [isLoading, setIsLoading] = useState(false);
   const [jiraIssues, setJiraIssues] = useState<any[]>([]);
   const [jiraProjects, setJiraProjects] = useState<any[]>([]);
+  const [googleData, setGoogleData] = useState<GoogleServiceData>({
+    forms: [],
+    slides: [],
+    sheets: [],
+    gmail: [],
+    calendar: [],
+    drive: [],
+  });
 
   useEffect(() => {
     refreshStatus();
@@ -54,6 +79,9 @@ export function IntegrationsProvider({ children }: { children: React.ReactNode }
         gmail: false,
         calendar: false,
         drive: false,
+        forms: false,
+        slides: false,
+        sheets: false,
         jira: false,
         confluence: false,
       };
@@ -63,6 +91,9 @@ export function IntegrationsProvider({ children }: { children: React.ReactNode }
           newIntegrations.gmail = true;
           newIntegrations.calendar = true;
           newIntegrations.drive = true;
+          newIntegrations.forms = true;
+          newIntegrations.slides = true;
+          newIntegrations.sheets = true;
         } else if (status.service === 'jira' && status.connected) {
           newIntegrations.jira = true;
           newIntegrations.confluence = true; // Assume confluence if JIRA is connected
@@ -78,27 +109,23 @@ export function IntegrationsProvider({ children }: { children: React.ReactNode }
   };
 
   const connectIntegration = async (id: string, credentials?: { domain: string; email: string; token: string }) => {
-    if (id === 'gmail' || id === 'calendar' || id === 'drive') {
-      // Redirect to Google OAuth
+    if (['gmail', 'calendar', 'drive', 'forms', 'slides', 'sheets'].includes(id)) {
       try {
-        const response = await integrationsAPI.getGoogleData('gmail'); // This will trigger auth if needed
+        await integrationsAPI.getGoogleData(id as keyof GoogleServiceData);
         await refreshStatus();
       } catch (error) {
-        // If auth is needed, the API will handle the redirect
         console.log('Google auth required');
       }
     } else if (id === 'jira' && credentials) {
-      // Send credentials to backend
       await integrationsAPI.connectJira(credentials);
       await refreshStatus();
     } else {
-      // For other integrations, just update local state
       setIntegrations(prev => ({ ...prev, [id]: true }));
     }
   };
 
   const disconnectIntegration = async (id: string) => {
-    if (id === 'gmail' || id === 'calendar' || id === 'drive') {
+    if (['gmail', 'calendar', 'drive', 'forms', 'slides', 'sheets'].includes(id)) {
       try {
         await integrationsAPI.disconnectGoogle();
         await refreshStatus();
@@ -148,19 +175,37 @@ export function IntegrationsProvider({ children }: { children: React.ReactNode }
     }
   };
 
+  const fetchGoogleService = async (service: keyof GoogleServiceData) => {
+    setIsLoading(true);
+    try {
+      const response = await integrationsAPI.getGoogleData(service);
+      setGoogleData(prev => ({
+        ...prev,
+        [service]: response?.data?.data || []
+      }));
+      console.log(`Fetched ${service} data:`, response?.data?.data);
+    } catch (error) {
+      console.error(`Failed to fetch Google ${service} data:`, error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <IntegrationsContext.Provider value={{ 
-      integrations, 
+      integrations,
       integrationStatus,
-      connectIntegration, 
+      connectIntegration,
       disconnectIntegration,
       refreshStatus,
       syncAll,
       isLoading,
       jiraIssues,
       jiraProjects,
+      googleData,
       fetchJiraIssues,
-      fetchJiraProjects
+      fetchJiraProjects,
+      fetchGoogleService
     }}>
       {children}
     </IntegrationsContext.Provider>

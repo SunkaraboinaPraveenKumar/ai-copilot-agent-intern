@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { 
   Calendar, 
   Mail, 
@@ -8,7 +8,10 @@ import {
   Activity, 
   Target,
   Sparkles,
-  Minimize2
+  Minimize2,
+  Table,
+  Presentation,
+  FormInput
 } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
 import { useIntegrations } from "../contexts/IntegrationsContext";
@@ -54,6 +57,33 @@ function ShadcnSidebar({ isOpen, onClose }: SidebarProps) {
       status: integrations.drive ? 'Connected' : 'Disconnected',
       color: integrations.drive ? 'text-green-600' : 'text-red-600'
     },
+    {
+      id: 'forms',
+      name: 'Google Forms',
+      icon: FormInput,
+      description: 'Access your forms and responses',
+      connected: integrations.forms,
+      status: integrations.forms ? 'Connected' : 'Disconnected',
+      color: integrations.forms ? 'text-green-600' : 'text-red-600'
+    },
+    {
+      id: 'slides',
+      name: 'Google Slides',
+      icon: Presentation,
+      description: 'Access your presentations',
+      connected: integrations.slides,
+      status: integrations.slides ? 'Connected' : 'Disconnected',
+      color: integrations.slides ? 'text-green-600' : 'text-red-600'
+    },
+    {
+      id: 'sheets',
+      name: 'Google Sheets',
+      icon: Table,
+      description: 'Access your spreadsheets',
+      connected: integrations.sheets,
+      status: integrations.sheets ? 'Connected' : 'Disconnected',
+      color: integrations.sheets ? 'text-green-600' : 'text-red-600'
+    }
   ];
 
   const jiraIntegrations = [

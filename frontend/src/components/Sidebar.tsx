@@ -19,6 +19,9 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
     { id: 'gmail', name: 'Gmail', icon: Mail, description: 'Access your emails and notifications', connected: integrations.gmail },
     { id: 'calendar', name: 'Calendar', icon: Calendar, description: 'Manage your schedule and events', connected: integrations.calendar },
     { id: 'drive', name: 'Google Drive', icon: FileText, description: 'Access your documents and files', connected: integrations.drive },
+    { id: 'forms', name: 'Google Forms', icon: FileText, description: 'Access and manage your forms', connected: integrations.forms },
+    { id: 'slides', name: 'Google Slides', icon: FileText, description: 'View and manage presentations', connected: integrations.slides },
+    { id: 'sheets', name: 'Google Sheets', icon: FileText, description: 'Work with spreadsheets', connected: integrations.sheets },
   ];
 
   const jiraIntegrations = [

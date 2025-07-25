@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Zap, Shield, Calendar, Mail, GitBranch } from 'lucide-react';
+import { Zap, Shield, Calendar, Mail, GitBranch, FileSlidersIcon } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -106,6 +106,12 @@ export function LoginPage() {
                   <GitBranch className="h-4 w-4 text-purple-600" />
                 </div>
                 <span className="text-sm text-gray-700">JIRA project and task management</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-yellow-50 rounded-lg flex items-center justify-center">
+                  <FileSlidersIcon className="h-4 w-4 text-purple-600" />
+                </div>
+                <span className="text-sm text-gray-700">Recent Sheets, Slides, and Forms</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center">

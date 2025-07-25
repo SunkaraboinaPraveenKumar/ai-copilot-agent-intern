@@ -88,7 +88,7 @@ export const chatAPI = {
 export const integrationsAPI = {
   getStatus: () => api.get<IntegrationStatus[]>('/integrations/status'),
   
-  getGoogleData: (service: 'gmail' | 'calendar' | 'drive') =>
+  getGoogleData: (service: 'gmail' | 'calendar' | 'drive' | 'forms' | 'slides' | 'sheets') =>
     api.get(`/integrations/google/data?service=${service}`),
   
   getJiraData: (dataType: 'issues' | 'projects' = 'issues') =>
